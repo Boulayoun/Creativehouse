@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative House - Industrie Publicitaire</title>
+    <meta name="description" content="Creative House - Solutions d'impression grand format, développement web, aménagement d'intérieur, gestion des réseaux sociaux, et plus encore.">
+    <meta name="keywords" content="impression grand format, développement web, aménagement d'intérieur, gestion réseaux sociaux, Creative House">
+    <meta name="author" content="Creative House">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header class="sticky-header">
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Creative House Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+            <div class="dropdown">
+                <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+                <div class="dropdown-content">
+                    <a href="impression-grand-format.html"><i class="fas fa-print"></i> Impression Grand Format</a>
+                    <a href="developpement-web.html"><i class="fas fa-laptop-code"></i> Développement Web</a>
+                    <a href="amenagement-interieur.html"><i class="fas fa-couch"></i> Aménagement d'Intérieur</a>
+                    <a href="enseignes-totems.html"><i class="fas fa-sign"></i> Enseignes et Totems Publicitaires</a>
+                    <a href="plv.html"><i class="fas fa-cogs"></i> Fabrication de PLV</a>
+                    <a href="evenementiel.html"><i class="fas fa-calendar-alt"></i> Événementiel</a>
+                    <a href="gestion-reseaux-sociaux.html"><i class="fas fa-share-alt"></i> Gestion des Réseaux Sociaux</a>
+                    <a href="conseil-strategie-marketing.html"><i class="fas fa-chart-line"></i> Conseil en stratégie marketing</a>
+                </div>
+            </div>
+            <a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <a href="contact.html" class="btn-quote"><i class="fas fa-comment-dots"></i> Demander un devis</a>
+    </div>
+</header>
+
+<!-- Ajouter ici le script JavaScript -->
+<script>
+    // Affichage du menu déroulant sur le clic
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.querySelector('.dropdown'); // Cible le menu déroulant
+        const dropdownContent = dropdown.querySelector('.dropdown-content'); // Cible le contenu du dropdown
+
+        // Gérer l'ouverture et la fermeture du menu déroulant
+        dropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+            dropdownContent.classList.toggle('active'); // Toggle la classe active pour afficher/masquer
+        });
+    });
+</script>
+
+<!-- CSS pour afficher et masquer le menu -->
+<style>
+	
+	.logo img {
+    max-width: 100%;
+    height: auto; /* Maintient les proportions du logo */
+    width: 150px; /* Ajuste cette valeur à la taille souhaitée */
+}
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Toggle visible class to show dropdown */
+    .dropdown-content.active {
+        display: block;
+    }
+</style>

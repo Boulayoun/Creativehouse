@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Réseaux Sociaux - Creative House</title>
+    <meta name="description" content="Gestion professionnelle de vos réseaux sociaux, création de contenu, campagnes publicitaires et analyse de performances.">
+	    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div> <!-- Chargement dynamique du header -->
+    </header>
+		
+	<style>
+		/* Style pour la section CTA */
+#cta.cta {
+    display: flex;  /* Utilisation de Flexbox pour centrer le contenu */
+    flex-direction: column;  /* Organisation du contenu en colonne */
+    align-items: center;  /* Centre horizontalement */
+    justify-content: center;  /* Centre verticalement */
+    height: 200px;  /* Hauteur de la section, ajuste selon tes besoins */
+    background-color: #f9f9f9;  /* Choisir une couleur de fond */
+    text-align: center;  /* Centre le texte */
+}
+
+#cta .container {
+    max-width: 800px;  /* Limite la largeur du contenu */
+    width: 100%;  /* Prend toute la largeur disponible dans son parent */
+}
+
+#cta .cta p {
+    font-size: 1.5em;  /* Taille du texte */
+    color: #333;  /* Couleur du texte */
+    margin-bottom: 20px;  /* Espacement sous le texte */
+}
+
+#cta .cta .btn-quote {
+    font-size: 1.2em;  /* Taille du texte du bouton */
+    background-color: orange;  /* Couleur de fond du bouton */
+    color: white;  /* Couleur du texte du bouton */
+    padding: 10px 20px;  /* Espacement autour du texte du bouton */
+    border-radius: 5px;  /* Bords arrondis pour le bouton */
+    text-decoration: none;  /* Retirer la sous-ligne du lien */
+}
+
+#cta .cta .btn-quote:hover {
+    background-color: #e69500;  /* Couleur de fond lors du survol */
+}
+
+	.social-media-banner {
+    background-color: #f4f4f4; /* Choisis la couleur de fond appropriée */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+	margin-bottom: 20px;
+	
+}
+
+.social-media-banner .banner-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 1200px;
+	 margin: 0 auto;  /* Centre le contenu */
+}
+
+.social-media-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.social-media-banner p {
+    font-size: 1.2em;
+}
+/* Réduire les marges entre les sections */
+section {
+    margin-bottom: 30px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+/* Réduire l'espace autour de la bannière */
+.dynamic-banner {
+    padding: 40px 20px; /* Réduit l'espace à l'intérieur de la bannière */
+    margin-bottom: 30px; /* Réduit l'espace sous la bannière */
+}
+
+/* Ajuster les paddings et marges des sections internes */
+#services, .service-grid {
+    padding: 30px 20px; /* Réduit l'espace à l'intérieur des sections */
+}
+
+/* Ajuster la taille de la bannière pour les autres sections */
+#about, #guide {
+    padding: 30px 20px; /* Réduit l'espace à l'intérieur de ces sections */
+}
+
+/* Ajustement de la taille des titres si nécessaire */
+h2 {
+    margin-bottom: 15px; /* Réduit l'espace sous les titres */
+}
+
+/* Ajuster la taille des cartes de service */
+.service-item {
+    padding: 15px; /* Réduit l'espace à l'intérieur des cartes */
+    margin-bottom: 15px; /* Réduit l'espace entre les cartes */
+}
+
+</style>
+    <!-- Bannière spécifique à la page gestion des réseaux sociaux -->
+    <section class="social-media-banner">
+        <div class="banner-content">
+            <h1>Optimisez votre présence en ligne</h1>
+            <p>Nous gérons vos réseaux sociaux pour un meilleur engagement et une meilleure visibilité.</p>
+        </div>
+    </section>
+
+    <!-- Nos Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services de Gestion des Réseaux Sociaux</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/social-media-management.png" alt="Gestion de comptes">
+                    <h3>Gestion de comptes sociaux</h3>
+                    <p>Nous gérons vos comptes sociaux pour améliorer votre présence en ligne.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/content-creation.png" alt="Création de contenu">
+                    <h3>Création de contenu</h3>
+                    <p>Création de posts, vidéos et visuels adaptés à vos réseaux sociaux.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/ads-campaigns.png" alt="Campagnes publicitaires">
+                    <h3>Campagnes publicitaires</h3>
+                    <p>Gestion des campagnes publicitaires sur Facebook, Instagram et autres.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <p>Prêt à booster votre présence en ligne ?</p>
+            <a href="contact.html" class="btn-quote">Demander un devis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Chargement dynamique du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

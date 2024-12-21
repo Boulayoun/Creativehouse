@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service d'impression grand format, idéal pour vos affiches, bannières, panneaux et plus. Creative House vous offre des solutions personnalisées de haute qualité.">
+    <meta name="keywords" content="impression grand format, affiches, bannières, panneaux, Creative House">
+    <title>Impression Grand Format - Creative House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- Main content -->
+    <section id="impression-grand-format" class="service-section">
+        <div class="container">
+            <h1>Impression Grand Format</h1>
+            <p>Des solutions d'impression grand format adaptées à vos besoins. Nous offrons une large gamme de produits pour des impressions de haute qualité : affiches, bannières, panneaux, et plus encore.</p>
+
+            <h2>Nos produits d'impression</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/poster.webp" alt="Impressions de posters et affiches publicitaires en grand format" class="product-photo">
+                    <h3>Posters et Affiches Publicitaires</h3>
+                    <p>Impressions de posters et affiches en grand format, idéales pour la promotion de vos événements ou produits.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/bache.webp" alt="Bâches publicitaires résistantes pour utilisation extérieure" class="product-photo">
+                    <h3>Bâches Publicitaires</h3>
+                    <p>Bâches résistantes, parfaites pour une utilisation extérieure sur de grands espaces, pour vos campagnes de publicité ou événements.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/rollup.webp" alt="Roll-ups et Kakemonos portables pour expositions et salons" class="product-photo">
+                    <h3>Roll-ups et Kakemonos</h3>
+                    <p>Des solutions portables pour vos expositions et salons. Faciles à installer et à transporter.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/murale.webp" alt="Décorations murales personnalisées pour vos intérieurs" class="product-photo">
+                    <h3>Murales et Décorations Murales</h3>
+                    <p>Décorez vos espaces avec des impressions murales personnalisées adaptées à vos intérieurs.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/panneau-pvc.webp" alt="Panneaux en PVC ou Forex durables pour affichage extérieur" class="product-photo">
+                    <h3>Panneaux en PVC ou Forex</h3>
+                    <p>Impressions durables et robustes pour vos panneaux d'affichage, enseignes et signalétiques extérieures.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/stand.webp" alt="Stands d'exposition personnalisés pour salons et événements" class="product-photo">
+                    <h3>Stands d'Exposition</h3>
+                    <p>Création de stands personnalisés pour vos salons et événements. Optimisez votre visibilité sur le terrain.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/vitrine.webp" alt="Habillage de vitrines personnalisées pour attirer l'attention" class="product-photo">
+                    <h3>Vitrines et Habillage de Vitrines</h3>
+                    <p>Habillez vos vitrines avec des impressions personnalisées, idéales pour attirer l'attention sur vos produits ou services.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/panneau-directionnel.webp" alt="Panneaux directionnels élégants pour guider les visiteurs" class="product-photo">
+                    <h3>Panneaux Directionnels et Signalétiques</h3>
+                    <p>Des panneaux pratiques et élégants pour guider les visiteurs ou signaler des informations importantes dans vos espaces publics.</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/banderole.webp" alt="Banderoles de chantier résistantes pour afficher des informations" class="product-photo">
+                    <h3>Banderoles de Chantier</h3>
+                    <p>Banderoles résistantes pour afficher des informations pendant vos chantiers ou événements extérieurs.</p>
+                </div>
+            </div>
+
+            <h2>Pourquoi choisir Creative House ?</h2>
+            <p>Nous offrons des services d'impression grand format de haute qualité, avec des options personnalisées pour chaque besoin. Notre équipe de professionnels est à votre disposition pour vous accompagner tout au long de votre projet.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

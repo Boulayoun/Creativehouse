@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative House propose des solutions de PLV (publicité sur lieu de vente) pour améliorer l'expérience client et booster vos ventes. Découvrez nos supports publicitaires adaptés.">
+    <title>Fabrication de PLV - Creative House</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+	<style>
+	.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+
+
+</style>
+
+    <!-- Main content -->
+    <section id="plv" class="service-section">
+        <div class="container">
+            <h1>Fabrication de PLV (Publicité sur Lieu de Vente)</h1>
+            <p>Chez Creative House, nous vous proposons une large gamme de solutions de PLV personnalisées pour améliorer l'expérience d'achat de vos clients et promouvoir vos produits sur le lieu de vente. Nos supports sont conçus pour attirer l'attention et maximiser l'impact de votre communication visuelle.</p><br>
+
+
+            <h2>Nos Solutions de PLV</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/podium-display.webp" alt="Présentoir de Produits">
+                    <h3>Présentoir de Produits</h3>
+                    <p>Présentez vos produits de manière élégante avec des présentoirs adaptés à chaque type d'article.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/display-shelves.webp" alt="Étagères Publicitaires">
+                    <h3>Étagères Publicitaires</h3>
+                    <p>Optimisez vos espaces de vente avec des étagères pour mettre en avant vos produits efficacement.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/floor-stand.webp" alt="Totem Publicitaire">
+                    <h3>Totem Publicitaire</h3>
+                    <p>Attirez l'attention de vos clients avec des totems publicitaires créatifs et visuellement percutants.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/posters-stands.webp" alt="Panneaux Publicitaires">
+                    <h3>Panneaux Publicitaires</h3>
+                    <p>Utilisez des panneaux publicitaires pour une visibilité maximale de vos promotions ou messages.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/card-holders.webp" alt="Porte-cartes Publicitaires">
+                    <h3>Porte-cartes Publicitaires</h3>
+                    <p>Présentez vos offres et produits dans des porte-cartes élégants et pratiques.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/window-displays.webp" alt="Vitrines Publicitaires">
+                    <h3>Vitrines Publicitaires</h3>
+                    <p>Habillez vos vitrines avec des affichages captivants pour attirer les passants et clients.</p>
+                </div>
+            </div><br>
+
+
+            <h2>Pourquoi Choisir Creative House pour Votre PLV ?</h2>
+            <p>Nous vous garantissons des solutions de PLV sur mesure, créatives et efficaces pour capter l'attention de vos clients. Nous utilisons des matériaux de qualité et une conception innovante pour des supports durables et percutants, adaptés à tous les environnements commerciaux.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

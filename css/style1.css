@@ -1,0 +1,132 @@
+/* Reset de base */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Corps principal */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Section À propos */
+#about {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+#about h1, #about h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+#about p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Section équipe */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.team-member {
+    text-align: center;
+    width: 220px;
+}
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.team-member h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+.team-member p {
+    color: #666;
+}
+
+/* Section Nos valeurs */
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+/* Ciblez les icônes dans la section Nos valeurs */
+.nos-valeurs .value-icon {
+    width: 250px;  /* Agrandir l'icône */
+    height: 250px; /* Maintenir la hauteur pour garder les proportions */
+    margin-bottom: 15px; /* Ajoutez un peu d'espace sous l'icône */
+    object-fit: contain; /* S'assure que l'icône reste bien dimensionnée sans être coupée */
+}
+
+/* Section du texte défilant */
+.scrolling-banner {
+    background-color: #333; /* Fond sombre */
+    color: white;
+    padding: 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Masque tout texte qui dépasse */
+    height: 60px; /* Ajuste la hauteur de la section pour Edge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texte défilant */
+.scrolling-banner p {
+    position: absolute;
+    white-space: nowrap; /* Empêche le texte de se casser */
+    animation: scrollText 15s linear infinite; /* Animation du texte */
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation du texte */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Commence à droite */
+    }
+    100% {
+        transform: translateX(-100%); /* Fin à gauche */
+    }
+}
+
+/* Style du menu déroulant */

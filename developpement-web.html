@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service de développement web personnalisé : création de sites web, applications web, et services de maintenance.">
+    <title>Développement Web - Creative House</title>
+	    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+<style>
+	.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+
+</style>	   
+    <!-- Main content -->
+    <section id="development-web" class="service-section">
+        <div class="container">
+            <h1>Développement Web</h1>
+            <p>Nous offrons des solutions de développement web sur mesure pour répondre à vos besoins. Que ce soit pour un site vitrine, une application web ou un projet e-commerce, nous avons la solution pour vous.</p><br>
+
+
+            <h2>Nos Services de Développement Web</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/web-design.png" alt="Création de sites web sur mesure">
+                    <h3>Création de Sites Web sur Mesure</h3>
+                    <p>Nous créons des sites web adaptés à vos besoins spécifiques avec un design moderne et performant.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/web-app.png" alt="Développement d’applications web">
+                    <h3>Développement d'Applications Web</h3>
+                    <p>Création d'applications web interactives et sur mesure pour améliorer l'expérience de vos utilisateurs.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/responsive.png" alt="Sites Responsives">
+                    <h3>Sites Responsives</h3>
+                    <p>Nos sites s'adaptent parfaitement à tous les appareils, garantissant une expérience utilisateur optimale sur mobile, tablette et ordinateur.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/seo.png" alt="SEO et Référencement">
+                    <h3>SEO et Référencement</h3>
+                    <p>Optimisez votre visibilité sur Google et autres moteurs de recherche avec notre expertise en SEO.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/maintenance.webp" alt="Maintenance de sites web">
+                    <h3>Maintenance de Sites Web</h3>
+                    <p>Nous assurons la mise à jour, la sécurité et la maintenance de vos sites pour une performance continue.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/integration.webp" alt="Intégration de fonctionnalités spécifiques">
+                    <h3>Intégration de Fonctionnalités Spécifiques</h3>
+                    <p>Nous intégrons des fonctionnalités sur mesure telles que les paiements en ligne, les bases de données et plus encore.</p>
+                </div>
+            </div>
+
+            <h2>Pourquoi choisir Creative House pour votre projet web ?</h2>
+            <p>Notre équipe de développeurs experts met à votre disposition son savoir-faire pour vous fournir des solutions performantes et sur mesure, tout en veillant à l’ergonomie et à la sécurité de vos projets.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

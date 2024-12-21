@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aménagement d'intérieur sur mesure pour optimiser vos espaces et les transformer selon vos besoins et préférences.">
+    <title>Aménagement d'Intérieur - Creative House</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+	<style>
+		.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+</style>
+
+    <!-- Main content -->
+    <section id="interior-design" class="service-section">
+        <div class="container">
+            <h1>Aménagement d'Intérieur</h1>
+            <p>Chez Creative House, nous transformons vos espaces avec des aménagements intérieurs personnalisés, adaptés à vos besoins et à votre style. Que ce soit pour votre maison, votre bureau ou tout autre espace, nous vous proposons des solutions qui allient esthétisme, fonctionnalité et confort.</p><br>
+
+
+            <h2>Nos Services d'Aménagement d'Intérieur</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/space-planning.webp" alt="Planification d'Espace">
+                    <h3>Planification d'Espace</h3>
+                    <p>Nous optimisons la disposition de vos espaces pour maximiser leur fonctionnalité tout en conservant un style esthétique unique.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/interior-design.png" alt="Design Intérieur Personnalisé">
+                    <h3>Design Intérieur Personnalisé</h3>
+                    <p>Des designs intérieurs sur mesure, en harmonie avec vos goûts, votre personnalité et l’ambiance souhaitée pour chaque pièce.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/lighting-design.webp" alt="Design d'Éclairage">
+                    <h3>Design d'Éclairage</h3>
+                    <p>Création de concepts d’éclairage adaptés pour améliorer l’ambiance et mettre en valeur les éléments de votre espace.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/furniture-selection.webp" alt="Sélection de Meubles">
+                    <h3>Sélection de Meubles</h3>
+                    <p>Choix de meubles élégants et fonctionnels qui correspondent à votre style et à l'utilisation de l'espace.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/decoration.png" alt="Décoration d'Intérieur">
+                    <h3>Décoration d'Intérieur</h3>
+                    <p>Ajoutez une touche personnelle à votre espace avec des objets décoratifs qui apportent chaleur et confort.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/renovation.webp" alt="Rénovation d'Espace">
+                    <h3>Rénovation d'Espace</h3>
+                    <p>Transformez complètement votre espace en rénovant les structures, matériaux et finitions pour un aspect plus moderne.</p>
+                </div>
+            </div><br>
+
+
+            <h2>Pourquoi Choisir Creative House ?</h2>
+            <p>Notre équipe d'experts en aménagement d'intérieur travaille en étroite collaboration avec vous pour créer un espace qui vous ressemble, tout en respectant votre budget et vos contraintes techniques. Avec une approche alliant créativité et fonctionnalité, nous nous engageons à offrir des solutions adaptées à vos besoins.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

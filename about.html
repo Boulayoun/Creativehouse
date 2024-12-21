@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative House - Industrie Publicitaire</title>
+	<meta name="description" content="Creative House - Solutions d'impression grand format, développement web, aménagement d'intérieur, gestion des réseaux sociaux, et plus encore.">
+    <meta name="keywords" content="impression grand format, développement web, aménagement d'intérieur, gestion réseaux sociaux, Creative House">
+    <meta name="author" content="Creative House">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <!-- Div pour insérer le header -->
+    <div id="header-container"></div>
+
+    <!-- Main content -->
+    <section id="main-content">
+        <h1>Bienvenue chez Creative House</h1>
+        <p>Découvrez nos services innovants et créatifs...</p>
+    </section>
+
+    <script>
+        // Utilisation de JavaScript pour insérer le header
+         // Charger le header à partir du fichier header.html
+    fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector('header').innerHTML = data;
+    });
+    </script>
+    </header>
+
+    <section class="scrolling-banner">
+        <p>Découvrez nos services et laissez-nous transformer vos idées en réalité. Innovation, Qualité, Service Client à votre écoute !</p>
+    </section>
+
+    <!-- Main content -->
+    <section id="about">
+        <div class="container">
+            <h1>À propos de Creative House</h1>
+            <p>Creative House est une entreprise innovante spécialisée dans l'impression grand format, le développement web, et la gestion des réseaux sociaux. Nous avons pour mission d'accompagner nos clients dans la réalisation de leurs projets en offrant des solutions personnalisées et de haute qualité.</p>
+
+            <h2>Notre histoire</h2>
+            <p>Fondée en 2008, Creative House est née de la passion de ses fondateurs pour l'impression numérique et la création digitale. Après plusieurs années d'expérience dans les secteurs de la communication et du marketing, notre équipe a décidé de réunir ses expertises pour offrir des services complets allant de l'impression grand format à la conception de sites web sur mesure.</p>
+
+            <h2>Notre équipe</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="img/youssef.png" alt="Youssef Boulayoun" class="team-photo">
+                    <h3>Youssef Boulayoun</h3>
+                    <p>CEO & Expert en communication visuelle</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/sanaa.png" alt="Sanaa Nazeha Mountassir" class="team-photo">
+                    <h3>Sanaa Nazeha Mountassir</h3>
+                    <p>Chef de projet Impression Grand Format</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/yassine.png" alt="Yassine Mountassir" class="team-photo">
+                    <h3>Yassine Mountassir</h3>
+                    <p>Développeur Web Senior</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/fatiha.png" alt="Fatiha Lakhal" class="team-photo">
+                    <h3>Fatiha Lakhal</h3>
+                    <p>Responsable Marketing Digital</p>
+                </div>
+            </div>
+
+            <h2>Notre mission</h2>
+            <p>Chez Creative House, notre objectif est de vous offrir des services qui non seulement répondent à vos besoins actuels, mais aussi anticipent vos besoins futurs. Nous nous engageons à fournir des résultats exceptionnels dans chaque projet, avec un service client à la hauteur de vos attentes. Que ce soit pour une impression grand format, la création d'un site web moderne et performant, ou la gestion de vos réseaux sociaux, nous sommes là pour vous accompagner à chaque étape.</p>
+
+            <h2>Nos valeurs</h2>
+            <ul class="values-list">
+                <li>
+                    <img src="img/innovation-icon.png" alt="Innovation" class="value-photo">
+                    <p>Innovation : Nous restons à la pointe de la technologie pour vous offrir les meilleures solutions.</p>
+                </li>
+                <li>
+                    <img src="img/quality-icon.png" alt="Qualité" class="value-photo">
+                    <p>Qualité : Chaque projet est une opportunité pour nous de dépasser vos attentes.</p>
+                </li>
+                <li>
+                    <img src="img/service-icon.png" alt="Service Client" class="value-photo">
+                    <p>Service client : Nous sommes là pour vous accompagner à chaque étape de votre projet.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

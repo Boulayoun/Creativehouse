@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative House propose des solutions complètes pour l'événementiel, incluant la création de supports visuels, la gestion de la scénographie et plus encore.">
+    <title>Événementiel - Creative House</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+	<style>
+		.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+</style>
+
+    <!-- Main content -->
+    <section id="event" class="service-section">
+        <div class="container">
+            <h1>Services Événementiels</h1>
+            <p>Chez Creative House, nous offrons des solutions événementielles complètes, allant de la création de supports visuels à la gestion de la scénographie. Nous vous aidons à organiser des événements mémorables et à renforcer la visibilité de votre marque.</p><br>
+
+
+            <h2>Nos Services Événementiels</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/stand-design.png" alt="Design de Stands">
+                    <h3>Design de Stands</h3>
+                    <p>Création de stands personnalisés pour vos salons et foires, adaptés à vos besoins spécifiques.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/event-signage.webp" alt="Signalétique Événementielle">
+                    <h3>Signalétique Événementielle</h3>
+                    <p>Conception et réalisation de panneaux, totems, et signalétiques pour guider les participants et promouvoir vos messages.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/lights-and-setup.webp" alt="Éclairage et Installation">
+                    <h3>Éclairage et Installation</h3>
+                    <p>Solutions d'éclairage adaptées pour créer une ambiance unique et professionnelle lors de vos événements.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/event-promotion.webp" alt="Promotion Événementielle">
+                    <h3>Promotion Événementielle</h3>
+                    <p>Création de supports visuels et publicitaires pour promouvoir vos événements en ligne et hors ligne.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/branding-event.webp" alt="Branding Événementiel">
+                    <h3>Branding Événementiel</h3>
+                    <p>Personnalisation de votre événement avec des éléments de branding pour maximiser la visibilité de votre marque.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/audio-visual-setup.webp" alt="Installation Audio/Visuelle">
+                    <h3>Installation Audio/Visuelle</h3>
+                    <p>Fourniture de solutions audiovisuelles pour rendre votre événement plus interactif et dynamique.</p>
+                </div>
+            </div><br>
+
+
+            <h2>Pourquoi Choisir Creative House pour Vos Événements ?</h2>
+            <p>Avec notre expertise en gestion d'événements, nous vous accompagnons de la conception à la réalisation, pour faire de chaque événement un moment inoubliable. Notre équipe met l'accent sur l'innovation, la créativité et l'efficacité pour répondre à tous vos besoins événementiels.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

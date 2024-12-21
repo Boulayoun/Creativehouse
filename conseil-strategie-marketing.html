@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseil en Stratégie Marketing | Creative House</title>
+    <meta name="description" content="Nous vous accompagnons dans la création de stratégies marketing percutantes et efficaces pour atteindre vos objectifs commerciaux.">
+    <meta name="keywords" content="stratégie marketing, plan marketing digital, gestion de marque, conseil marketing">
+    <meta name="author" content="Creative House">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
+	
+</head>
+	
+	
+<body>
+
+     <!-- Header -->
+    <header>
+        <div id="header-container"></div> <!-- Chargement dynamique du header -->
+    </header>
+		<style>
+	.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+
+
+</style>
+
+    <!-- Section Bannière -->
+    <section class="marketing-banner">
+    <div class="banner-content">
+        <h1>Boostez votre visibilité avec une stratégie marketing sur mesure</h1>
+        <p>Nous vous accompagnons pour construire des stratégies efficaces et vous aider à atteindre vos objectifs commerciaux.</p>
+    </div>
+</section>
+
+    <!-- Nos Services de Conseil en Stratégie Marketing -->
+    <section id="marketing-strategy-services">
+        <div class="container">
+            <h2>Nos Services de Conseil en Stratégie Marketing</h2><br>
+
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/market-research.webp"  alt="Etude de Marché">
+                    <h3>Etude de Marché</h3>
+                    <p>Analyse approfondie des tendances du marché pour élaborer des stratégies pertinentes et ciblées.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/digital-marketing-plan.png" alt="Plan Marketing Digital">
+                    <h3>Plan Marketing Digital</h3>
+                    <p>Création de stratégies digitales pour maximiser votre présence en ligne et atteindre vos cibles efficacement.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/brand-management.webp" alt="Gestion de Marque">
+                    <h3>Gestion de Marque</h3>
+                    <p>Stratégies de gestion de marque pour améliorer la perception et la notoriété de votre entreprise.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/content-marketing.webp" alt="Marketing de Contenu">
+                    <h3>Marketing de Contenu</h3>
+                    <p>Création de contenu engageant pour attirer et fidéliser vos clients tout en augmentant votre visibilité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <p>Prêt à donner un coup de boost à votre stratégie marketing ?</p>
+            <a href="contact.html" class="btn-quote">Demander un devis</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+	<script>
+        // Chargement dynamique du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

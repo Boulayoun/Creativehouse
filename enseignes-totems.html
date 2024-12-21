@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Création d'enseignes et totems publicitaires sur mesure pour mettre en valeur votre entreprise et attirer l'attention de vos clients.">
+    <title>Enseignes et Totems Publicitaires - Creative House</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+	<style>
+		.service-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn-quote {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-quote:hover {
+    background: #e69500;
+}
+
+</style>
+
+    <!-- Main content -->
+    <section id="signage-totems" class="service-section">
+        <div class="container">
+            <h1>Enseignes et Totems Publicitaires</h1>
+            <p>Chez Creative House, nous concevons des enseignes et des totems publicitaires personnalisés pour renforcer la visibilité de votre entreprise. Que ce soit pour une enseigne lumineuse ou un totem moderne, nous vous offrons des solutions adaptées à vos besoins pour capter l'attention de vos clients.</p><br>
+
+
+            <h2>Nos Services d'Enseignes et Totems Publicitaires</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="img/led-signs.png" alt="Enseignes Lumineuses">
+                    <h3>Enseignes Lumineuses</h3>
+                    <p>Créez un impact immédiat avec des enseignes lumineuses, idéales pour attirer l'attention, même la nuit.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/fabricated-totem.webp" alt="Totems Publicitaires">
+                    <h3>Totems Publicitaires</h3>
+                    <p>Des totems personnalisés pour guider, informer et capturer l'attention de vos visiteurs et clients.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/custom-signs.webp" alt="Enseignes Personnalisées">
+                    <h3>Enseignes Personnalisées</h3>
+                    <p>Conception d'enseignes sur mesure, adaptées à votre image de marque et à vos besoins spécifiques.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/3d-signs.webp" alt="Enseignes 3D">
+                    <h3>Enseignes 3D</h3>
+                    <p>Donnez de la profondeur et du caractère à votre enseigne avec des modèles en 3D modernes et élégants.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/retro-signs.webp" alt="Enseignes Rétroéclairées">
+                    <h3>Enseignes Rétroéclairées</h3>
+                    <p>Optez pour des enseignes rétroéclairées pour une visibilité maximale dans toutes les conditions d'éclairage.</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/exterior-signs.webp" alt="Enseignes Extérieures">
+                    <h3>Enseignes Extérieures</h3>
+                    <p>Des enseignes durables et résistantes, conçues pour supporter les conditions climatiques extérieures.</p>
+                </div>
+            </div><br>
+
+
+            <h2>Pourquoi Choisir Creative House ?</h2>
+            <p>Nous mettons un point d'honneur à fournir des enseignes et totems publicitaires de haute qualité, adaptés à votre identité visuelle et aux exigences de votre environnement. Grâce à notre expertise, nous vous garantissons une solution clé en main, esthétique et fonctionnelle, pour booster la visibilité de votre entreprise.</p>
+
+            <div class="cta">
+                <a href="contact.html" class="btn-quote">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative House. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Chargement du header
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>
